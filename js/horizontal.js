@@ -9,11 +9,11 @@ $(function($){
 			itemNav: 'forceCentered',
 			smart: 1,
 			activateMiddle: 1,
-			activateOn: 'click',
+			// activateOn: 'click',
 			mouseDragging: 1,
 			touchDragging: 1,
 			releaseSwing: 1,
-			startAt: 1,
+			startAt: 2,
 			scrollBar: $wrap.find('.scrollbar'),
 			scrollBy: 1,
 			speed: 400,
@@ -31,3 +31,8 @@ $(function($){
 	}());
 // $('window').resize(x,false)
 });
+$(window).resize(function(e) {
+			var $frame = $('#effects');
+
+        $frame.sly('reload');
+          });
