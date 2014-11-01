@@ -1,13 +1,25 @@
-<html ng-app ="sponsor" ng-init>
+<html  >
 <head>
   <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
   <script type="text/javascript" src="js\jquery.js"></script>
   <script type="text/javascript" src="bootstrap\js\bootstrap.js"></script>
   <script type="text/javascript" src="js\angular.js"></script>
+  
 </head>
-<body>
-  <div class="container">
-  <img src="" />
-</div>
+<body ng-app="" ng-controller="photo">
+  <div class="container" >
+    <ul>
+      <li ng-repeat="p in pic">{{p}}</li>
+    </ul> 
+   <!-- <img ng-repeat="p in pic" src="img\sponsors\photo{{ p }}.jpg"/>  -->
+  </div>
+  <script type="text/javascript">
+    function photo($scope){
+      //for(i=0; i<33; i++){
+       // $scope.pic.push(i);
+       $scope.pic = "fadsf";
+       console.log($scope.pic);
+      }    
+  </script>
 </body>
 </html>
