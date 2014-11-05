@@ -9,7 +9,7 @@
     width: 100%;
     height: 160px;
     padding: 0;
-    background: #C9DF8A !important;
+    background: #567EBB !important;
     // background: #3E404A !important;
 }
 .frame .slidee {
@@ -26,8 +26,8 @@
     height: 100%;
 }
 body {
-    // background: #3E404A !important;
-    background: #C9DF8A !important;
+    background: #567EBB !important;
+    /*background: #C9DF8A !important;*/
 }
 .container {
     margin: 0 auto;
@@ -58,27 +58,29 @@ body {
     height: 100%;
     margin: 0 1px 0 0;
     padding: 0;
-    background: #1A1B1C;
+    background: #000511;
     //background: #408C84;
-    color: #ddd;
+    opacity:0.5;
+    /* color: #ddd; */
     color: #fff;
     text-align: center;
     cursor: pointer;
-    // border-radius: 10px;
+    border-radius: 4px;
 }
 .frame ul li.active {
     color: #fff;
+    opacity: 1;
     // background: #00C176;
-    background: #36802D;
-    // background: #2bdb95;
+     //background: #2DEBAE  ;
+    background: #86C28B;
 }
 /* Scrollbar */
 
 .scrollbar {
     margin: 0 0 1em 0;
     height: 2px;
-    background: #ccc;
-    line-height: 0;
+/*    background: #fff;
+*/    line-height: 0;
 }
 .scrollbar .handle {
     width: 100px;
