@@ -9,7 +9,7 @@
     width: 100%;
     height: 160px;
     padding: 0;
-    background: #567EBB !important;
+    //background: #567EBB !important;
     // background: #3E404A !important;
 }
 .frame .slidee {
@@ -61,6 +61,7 @@ body {
     background: #000511;
     //background: #408C84;
     opacity:0.5;
+    border: 2px  dotted white;
     /* color: #ddd; */
     color: #fff;
     text-align: center;
@@ -69,7 +70,7 @@ body {
 }
 .frame ul li.active {
     color: #fff;
-    opacity: 1;
+    opacity: 0.8;
     // background: #00C176;
      //background: #2DEBAE  ;
     background: #86C28B;
@@ -172,4 +173,9 @@ body {
     -webkit-transform: rotateY(-60deg) scale(0.9);
     -ms-transform: rotateY(-60deg) scale(0.9);
     transform: rotateY(-60deg) scale(0.9);
+}
+
+.modal{
+    text-align: center;
+    min-height: 500px !important;
 }

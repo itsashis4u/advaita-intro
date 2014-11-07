@@ -30,25 +30,42 @@ $(function($){
 			keyboardNavBy: $wrap.find('.items')
 
 		});
-
+var x ;
+//Random color for active Sly :P
+// setInterval($('li.active').css("background-color", '#'+Math.floor(Math.random()*16777215).toString(16)),10000);	
 
 $('ul').each(function() {
     $('li').on('click', function() {
-        var $frame = $('#effects');
         var index= $(this).attr("id");
         index = parseInt(index.slice(2));
-        console.log(typeof index);
-        console.log(index);
+        // console.log(typeof index);
+        // console.log(index); 		DEBUGGING THE INDEX PART
         $frame.sly('activate', index-1);
+        // console.log($(this).hasClass("active"));
+        console.log(x =$(this).prev().prop('tagName'));
+        console.log("Has active class (testing)", $(x).hasClass("active"))
         console.log($(this).text());
+        var txt = $(this).text();
+        buildModal(txt);
     })
 })
-
-	}());
+}());
 });
 $(window).resize(function(e) {
     var $frame = $('#effects');
     $frame.sly('reload');
 
 });
+
+function buildModal(txt)	{
+        // console.log(txt);
+$('div#kk>.modal-dialog>.modal-content>.modal-header').append('<h1 class="modal-title">'+txt+'</h1>');
+$('#kk').modal();
+
+
+$('#kk').on('hidden.bs.modal', function () {
+	$('.modal-title').remove();
+});
+
+}
 
