@@ -6,15 +6,17 @@
 document.body.style.width= document.body.clientWidth;
 document.body.style.height= document.body.clientHeight;
 document.body.style.background= "#070716";
-document.body.style.backgroundImage= "url('back.png')";
+//document.body.style.backgroundImage= "url('back.png')";
 var canv = document.getElementsByTagName('canvas');
 canv.display= "block";
 canv.verticalAlign = "bottom";
-
+//canv.style.position = "fixed";
 var x = document.createElement('div');
 document.body.appendChild(x).id= "particles-js";
-//x.style.zIndex = -1;
-
+//x.style.zIndex = -100;
+x.style.position = "fixed";
+x.style.width = "100%";
+x.style.height = "100%";
 /* config dom id (optional) + config particles params */
 particlesJS('particles-js', {
     particles: {
@@ -42,7 +44,7 @@ particlesJS('particles-js', {
         }
     },
     interactivity: {
-        enable: true,
+        enable: false,
         mouse: {
             distance: 150            
         },

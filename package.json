@@ -1,0 +1,26 @@
+{
+  "name": "advaita-intro",
+  "version": "1.0.0",
+  "description": "Website of Advaita'15, Techno-Cult Fest of IIIT-Bhubaneswar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsashis4u/advaita-intro.git"
+  },
+  "keywords": [
+    "advaita",
+    "iiit"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsashis4u/advaita-intro/issues"
+  },
+  "homepage": "https://github.com/itsashis4u/advaita-intro",
+  "dependencies" : {
+    //"express" : "2.5.",
+  }
+}

@@ -115,6 +115,7 @@ function launchParticlesJS(tag_id, params){
 	 
 	pJS.fn.canvasInit = function(){
 		pJS.canvas.ctx = pJS.canvas.el.getContext('2d');
+		//pJS.canvas.ctx = pJS.canvas.el.getCSSCanvasContext("2d", "squares", w, h);
 	};
 
 	pJS.fn.canvasSize = function(){
