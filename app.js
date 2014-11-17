@@ -1,39 +1,34 @@
-var http = require("http"),
-    url = require("url"),
-    path = require("path"),
-    fs = require("fs"),
-    port = process.argv[2] || 8888;
-	
-//var express = require('express');
+var express = require('express');
+var app = express();
+//var mongoose = require('mongoose');
+var path = require('path');
+//var bodyParser = require('body-parser')
+//var multipart = require('connect-multiparty');
+//var multipartMiddleware = multipart();
 
-http.createServer(function(request, response) {
+//var formPage = "/";  //Link of page which contains the form
 
-  var uri = url.parse(request.url).pathname
-    , filename = path.join(process.cwd(), uri);
+// app.set('views', path.join(__dirname, '/'))
 
-  path.exists(filename, function(exists) {
-    if(!exists) {
-      response.writeHead(404, {"Content-Type": "text/plain"});
-      response.write("404 Not Found\n");
-      response.end();
-      return;
-    }
+//app.use(express.static(path.join(__dirname, '/')));
 
-    if (fs.statSync(filename).isDirectory()) filename += '/index.html';
+//app.use(formPage, multipartMiddleware);
 
-    fs.readFile(filename, "binary", function(err, file) {
-      if(err) {        
-        response.writeHead(500, {"Content-Type": "text/plain"});
-        response.write(err + "\n");
-        response.end();
-        return;
-      }
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, './', 'index.html'));
+})
 
-      response.writeHead(200);
-      response.write(file, "binary");
-      response.end();
-    });
-  });
-}).listen(parseInt(port, 10));
+//used for data communication using GET method
+app.get('/sponsor', function(req, res) {
+    res.sendFile(path.join(__dirname, './', 'sponsor.html'));
+})
 
-console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+app.get('/team', function(req, res) {
+    res.sendFile(path.join(__dirname, './', 'team_advaita.html'));
+})
+
+var port = process.argv[2] || 9000;
+
+app.listen(port);
+
+console.log("Listening at http://localhost:" + port);

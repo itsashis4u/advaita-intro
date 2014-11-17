@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/itsashis4u/advaita-intro",
   "dependencies" : {
-    //"express" : "2.5.",
+    "express" : "4.9.0"
   }
 }
