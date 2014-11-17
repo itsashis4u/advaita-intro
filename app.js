@@ -10,25 +10,50 @@ var path = require('path');
 
 // app.set('views', path.join(__dirname, '/'))
 
-//app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '/')));
 
 //app.use(formPage, multipartMiddleware);
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, './', 'index.html'));
-})
-app.use("/css", express.static(__dirname + '/css'));
-app.use("/js", express.static(__dirname + '/js'));
-app.use("/img", express.static(__dirname + '/img'));
-app.use("/particlejs", express.static(__dirname + '/particleJs'));
-app.use("/bootstrap", express.static(__dirname + '/bootstrap'));
+/*app.use("../public/css", express.static(__dirname + '/public/css'));
+app.use("../public/js", express.static(__dirname + '/public/js'));
+app.use("../public/img", express.static(__dirname + '/public/img'));
+app.use("../public/js/particlejs", express.static(__dirname + '/public/js/particleJs'));
+app.use("../bootstrap", express.static(__dirname + '/bootstrap'));*/
+
 //used for data communication using GET method
+app.get('/', function(req, res) {
+    res.send("Hello World");
+    console.log("sent: index.html");
+})
+
+app.get('/events', function(req, res) {
+    res.sendFile(path.join(__dirname, './views', 'events.html'));
+    console.log("sent: events.html");
+})
+
 app.get('/sponsor', function(req, res) {
-    res.sendFile(path.join(__dirname, './', 'sponsor.html'));
+    res.sendFile(path.join(__dirname, './views', 'sponsor.html'));
+    console.log("sent: sponsor.html");
 })
 
 app.get('/team', function(req, res) {
-    res.sendFile(path.join(__dirname, './', 'team_advaita.html'));
+    res.sendFile(path.join(__dirname, './views', 'team_advaita.html'));
+    console.log("sent: team_advaita.html");
+})
+
+app.get('/campamba', function(req, res) {
+    res.sendFile(path.join(__dirname, './views', 'campamba.html'));
+    console.log("sent: campamba.html");
+})
+
+app.get('/about', function(req, res) {
+    res.sendFile(path.join(__dirname, './views', 'about_advaita.html'));
+    console.log("sent: about_advaita.html");
+})
+
+app.get('/hospitality', function(req, res) {
+    res.sendFile(path.join(__dirname, './views', 'hospitality.html'));
+    console.log("sent: hospitality.html");
 })
 
 var port = process.argv[2] || 9000;

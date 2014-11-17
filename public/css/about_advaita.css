@@ -4,8 +4,8 @@ body{
 }
 
 #main{
-    background: white;
-    color: blacks;
+    background: none;
+    color: white;
     font-family: ;
     font-weight: bold;
     font-size: 18px;
@@ -17,7 +17,7 @@ body{
     position: absolute;
     top: 120px;
     left: 120px;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 p{
@@ -27,6 +27,7 @@ p{
 .about{
    /*font-family: "Permanent Marker";*/
     font-size: 60px;
+    color:white;
     position: relative;
     top: 100px;
     left: 30px;
@@ -36,6 +37,7 @@ p{
 #advaita{
    /* font-family: "Permanent Marker";*/
     font-size: 60px;
+    color:white;
     font-weight: bold;
     position: absolute;
     top: 0px;
@@ -46,6 +48,7 @@ p{
 .year{
    /* font-family: "Permanent Marker";*/
     font-size: 60px;
+    color:white;
     font-weight: bold;
     position: relative;
     top: -300px;

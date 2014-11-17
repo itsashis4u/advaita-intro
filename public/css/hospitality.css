@@ -38,6 +38,7 @@ h2{
 #hospi{
     /*font-family: "Permanent Marker";*/
     font-size: 60px;
+    color: white;
     position: absolute;
     left: 450px;
 }

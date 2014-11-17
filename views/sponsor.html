@@ -1,10 +1,10 @@
 <html>
   <head lang="en">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="../public/js/jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <script src="js/angular.min1.js"></script>
+    <script src="../public/js/angular.min1.js"></script>
     <style>
     body{
     font-family: Open Sans;
@@ -38,7 +38,9 @@
     </style>
   </head>
   <body ng-app="">
-   <div class="navbar navbar-default" style="background: #1a1a1a; color: #fff;">
+<script src="../public/js/particleJs/particles.js"></script> 
+        <script src="../public/js/particleJs/js/particleapp.js"></script>
+    <div class="navbar navbar-default" style="background: #1a1a1a; color: #fff;">
                 <div class="centerText">
                 <h2>
                 <span class="glyphicon glyphicon-flash"></span>PAST SPONSORS<span class="glyphicon glyphicon-flash"></span>
@@ -51,7 +53,7 @@
         <li ng-repeat="p in pic">{{p}}</li>
       </ul>  -->
       <div class="row">
-        <img class="col-lg-4 image" style="width:350px;height:134px; " ng-repeat="p in pic" src="img/sponsors/photo{{p}}.jpg"/>
+        <img class="col-lg-4 image" style="width:350px;height:134px; " ng-repeat="p in pic" src="../public/img/sponsors/photo{{p}}.jpg"/>
       </div>
     </div>
     <script type="text/javascript">

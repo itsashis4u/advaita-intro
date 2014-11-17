@@ -17,6 +17,7 @@ document.body.appendChild(x).id= "particles-js";
 x.style.position = "fixed";
 x.style.width = "100%";
 x.style.height = "100%";
+
 /* config dom id (optional) + config particles params */
 particlesJS('particles-js', {
     particles: {
