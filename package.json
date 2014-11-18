@@ -2,7 +2,7 @@
   "name": "advaita-intro",
   "version": "1.0.0",
   "description": "Website of Advaita'15, Techno-Cult Fest of IIIT-Bhubaneswar",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

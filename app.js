@@ -21,12 +21,12 @@ app.use("../public/js/particlejs", express.static(__dirname + '/public/js/partic
 app.use("../bootstrap", express.static(__dirname + '/bootstrap'));*/
 
 //used for data communication using GET method
-app.get('/', function(req, res) {
-    res.send("Hello World");
-    console.log("sent: index.html");
-})
+// app.get('/', function(req, res) {
+//     res.send("Hello World");
+//     console.log("sent: index.html");
+// })
 
-app.get('/events', function(req, res) {
+app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, './views', 'events.html'));
     console.log("sent: events.html");
 })
@@ -56,7 +56,12 @@ app.get('/hospitality', function(req, res) {
     console.log("sent: hospitality.html");
 })
 
-var port = process.argv[2] || 9000;
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, './views', '404.html'));
+    console.log("sent: 404.html");
+})
+
+var port = process.env.PORT || 8880;
 
 app.listen(port);
 
