@@ -46,7 +46,7 @@ app.get('/team', function(req, res) {
     console.log("sent: team_advaita.html");
 })
 
-app.get('/campamba', function(req, res) {
+app.get('/campusambassador', function(req, res) {
     res.sendFile(path.join(__dirname, './views', 'campamba.html'));
     console.log("sent: campamba.html");
 })
