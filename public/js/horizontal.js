@@ -46,9 +46,21 @@ console.log("Has active class (testing)", $(x).hasClass("active"))
 console.log($(this).text());
 
 var txt = $(this).text();
-$('div#def>.modal-dialog>.modal-content>.modal-header').append('<h1 class="modal-title">'+txt+'</h1>');
-$('#def').modal();
-$('#def').on('hidden.bs.modal', function () {
+
+
+$('div.fade>.modal-dialog>.modal-content>.modal-header').append('<h1 class="modal-title alert alert-info">'+txt+'</h1>');
+
+if(txt == "Botsumo")
+	$('#bot').modal();
+else if(txt == "Wishing Well")
+	$('#well').modal();
+else if(txt == "Back To School")
+	$('#bts').modal();
+else
+	$('#def').modal();
+
+
+$('.fade').on('hidden.bs.modal', function () {
 $frame.sly('resume');
 $('.modal-title').remove();
 });
