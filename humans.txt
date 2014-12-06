@@ -3,13 +3,25 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Developer:Amulya Kumar Sahoo
+	Contact: amulya349 [at] gmail.com
+	Twitter: @amulya349
+	From: IIIT Bhubaneswar, India
 
-# THANKS
+	Developer: Ashish Kumar Badtiya
+	Contact: itsashis4u [at] gmail.com
+	Twitter: @itsashish4u
+	From: IIIT Bhubaneswar, India
 
-    <name>
+	Developer: Goutam Das
+	Contact: goutam2475 [at] gmail.com
+	From: IIIT Bhubaneswar, India
+ 
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    jQuery, Bootstrap, AngularJS
+    Node, Express
+    MongoDB
+    Sublime
