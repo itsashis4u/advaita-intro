@@ -35,10 +35,10 @@ particlesJS('particles-js', {
         opacity: 1,
         size: 2.5,
         size_random: true,
-        nb: 300,
+        nb: 250,
         line_linked: {
             enable_auto: false,
-            distance: 250,
+            distance: 300,
             color: '#1ca8c3',
             opacity: 0.5,
             width: 1,
