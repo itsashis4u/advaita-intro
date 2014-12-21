@@ -28,7 +28,7 @@ app.use("../bootstrap", express.static(__dirname + '/bootstrap'));*/
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, './views', 'main2.html'));
-    console.log("sent: main.html");
+    console.log("sent: main2.html");
 })
 
 app.get('/events', function(req, res) {
