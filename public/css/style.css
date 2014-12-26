@@ -182,3 +182,12 @@ left: 0;
 height: 80%;
 width: 100%;
 }
+.navbar-btn{
+    -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+
+        
+}

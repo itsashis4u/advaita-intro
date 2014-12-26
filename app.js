@@ -5,13 +5,13 @@ var path = require('path');
 //var bodyParser = require('body-parser')
 //var multipart = require('connect-multiparty');
 //var multipartMiddleware = multipart();
-
+var compression = require('compression');
 //var formPage = "/";  //Link of page which contains the form
+app.use(compression());
 
 // app.set('views', path.join(__dirname, '/'))
 
 app.use(express.static(path.join(__dirname, '/')));
-
 //app.use(formPage, multipartMiddleware);
 
 /*app.use("../public/css", express.static(__dirname + '/public/css'));

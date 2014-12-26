@@ -20,7 +20,8 @@
     "url": "https://github.com/itsashis4u/advaita-intro/issues"
   },
   "homepage": "https://github.com/itsashis4u/advaita-intro",
-  "dependencies" : {
-    "express" : "4.9.0"
+  "dependencies": {
+    "compression": "^1.2.2",
+    "express": "4.9.0"
   }
 }
